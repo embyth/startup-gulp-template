@@ -1,0 +1,24 @@
+/* stylelint-disable */
+// List Reset
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Removing input background color for chrome autocomplete
+/* Change the transparent to any color ;) */
+@mixin chrome-input-bg-fix() {
+  @-webkit-keyframes autofill {
+    0%, 100% {
+      color: #666;
+      background: transparent;
+    }
+  }
+  input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+}
+/* stylelint-enable */

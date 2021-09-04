@@ -1,0 +1,57 @@
+// Media BreakPoints
+$mobile-width: 320px;
+$mobile-l-width: 425px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+$mobile-l-max-width: ($tablet-width - 1);
+
+$retina-dpi: 144dpi;
+
+$mobile: "min-width: #{$mobile-width}";
+$mobile-l: "min-width: #{$mobile-l-width}";
+$tablet: "min-width: #{$tablet-width}";
+$desktop: "min-width: #{$desktop-width}";
+
+$mobile-l-only: "min-width: #{$mobile-l-width}) and (max-width: #{$mobile-l-max-width}";
+
+$retina: "min-resolution: #{$retina-dpi}";
+
+// Padding Variables
+$paddings: (
+  container-m: 0 30px,
+  container-t: 0 50px,
+  container-d: 0 50px,
+);
+
+// Font Variables
+$font-stack: (
+  opensans: ("Open Sans", "Tahoma", "Arial", sans-serif),
+);
+
+$font-weights: (
+  normal: 400,
+  regular: 400,
+);
+
+$line-height-base: 24px;
+
+$font-line-height: (
+  base: $line-height-base,
+);
+
+$font-size-base: 15px;
+
+$font-sizes: (
+  base: $font-size-base,
+);
+
+// Color Variables
+$black: #000000;
+$white: #ffffff;
+
+$bg-color-body: $white;
+
+$border-color-button: $black;
+
+$font-color-base: $black;
